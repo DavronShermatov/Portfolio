@@ -1,0 +1,67 @@
+.forms{
+    background-color: $dark75;
+    h1{
+        padding-top: 25px;
+        font-size: 45px;
+        text-align: center;
+        font-family: roboto bold;
+        font-weight: 400;
+        letter-spacing: 5px;
+        background: -webkit-linear-gradient(rgb(4, 0, 255), rgb(109, 175, 164));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    form{
+        padding: 30px 30px;
+    }
+}
+.form__about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        color: white;
+        font-family: roboto italic;
+        font-weight: 400;
+        // margin-right: 20px;
+        label{
+            width: 80%;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%px;
+        label{
+            width: 80%;
+        }
+        textarea{
+            width: 80%;
+        }
+    }
+}
+.send{
+    display: flex;
+    justify-content: flex-start;
+    button{
+        padding: 4px 8px;
+        border-radius: 10px;
+        background: -webkit-linear-gradient(rgb(0, 255, 13), rgb(255, 24, 24));
+        margin: 10px 10px;
+        border: 2px solid transparent;
+        font-family: roboto bold;
+        font-weight: 400;
+        &:hover{
+            border:2px solid rgb(0, 247, 255);
+            transition: 0.3s;
+            background: -webkit-linear-gradient(rgb(0, 247, 255), rgb(255, 24, 120));
+             -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
